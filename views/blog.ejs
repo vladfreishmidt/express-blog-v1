@@ -1,0 +1,25 @@
+<%- include('partials/head'); %>
+
+
+  <div class="container">
+    <main class="blog">
+      <% for (post of blog) { %>
+        <article class="blog__post">
+          <img src="<%= post.img %>" alt="" class="blog__post-img">
+          <div class="blog__post-ident-wrapper">
+            <h4 class="blog__post-title">
+              <%= post.name %>
+            </h4>
+            <p class="blog__post-text">
+              <%= post.text.slice(0, 200) %>... <a href="#">Read More ></a>
+            </p>
+          </div>
+        </article>
+        <% } %>
+    </main>
+  </div>
+
+
+
+
+  <%- include('partials/footer'); %>

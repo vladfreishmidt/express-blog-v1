@@ -1,0 +1,40 @@
+.blog {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.blog__post {
+  padding: 20px 10px;
+  border: 1px solid #ccc;
+}
+
+.blog__post:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.blog__post-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  font-family: var(--primary-text);
+}
+
+.blog__post-text {
+  color: #555;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.4;
+}
+
+.blog__post-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.blog__post-ident-wrapper {
+  margin-top: 30px;
+}

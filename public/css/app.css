@@ -1,0 +1,178 @@
+* {
+ box-sizing:  border-box;
+}
+
+:root {
+  --primary-text: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  --text: Arial, Helvetica, sans-serif;
+  --primary-color: #8B75EA;
+}
+
+body {
+  font-family: var(--text);
+  font-weight: 300;
+  background-color: #ccc;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.content {
+  background-color: #fff;
+  height: calc(90vh - 65px);
+}
+
+.sidebar {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  flex: 1;
+  height: 450px;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px 15px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.container {
+  max-width: 1220px;
+  padding: 0 10px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #001021;
+  color: #fff;
+}
+
+.header__inner {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--primary-text);
+  font-size: 40px;
+}
+
+.logo sup {
+  font-family: var(--text);
+  font-size: 14px;
+  vertical-align: super;
+}
+
+.nav__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav a {
+  color: #fff;
+  font-size: 17px;
+  display: inline-block;
+  padding: 20px;
+  transition: background-color .3s ease;
+}
+
+.nav__list li:not(:last-child) {
+  margin-right: 25px;
+}
+
+.nav__list a:hover {
+  background-color: var(--primary-color);
+}
+
+
+/* *******************
+        CONTENT
+   ******************* */
+
+.content {
+  border-radius: 10px;
+  margin-bottom: 20px;
+}   
+
+.content__inner {
+  margin-top: 20px;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.content__img {
+  width: 40%;
+}
+
+.content__heading {
+  font-size: 50px;
+  font-family: var(--primary-text);
+  margin-bottom: 20px;
+}
+
+.content__description {
+  font-size: 20px;
+  color: #555;
+}
+
+.content__buttons {
+  margin-top: 30px;
+}
+
+.btn {
+  border: 2px solid #8B75EA;
+  padding: 13px 28px;
+  display: inline-block;
+  border-radius: 5px;
+  transition: transform .3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0px 3px 10px 0px rgb(0 0 0 / 20%)
+}
+
+.btn:first-child {
+  margin-right: 15px;
+}
+
+.btn-primary {
+  background-color: #8B75EA;
+  color: #fff;
+}
+
+.btn-secondary {
+  color: #8B75EA;
+}
+
+
+/* *******************
+        SIDEBAR
+   ******************* */
+
+.sidebar__heading {
+  font-family: var(--primary-text);
+  font-size: 20px;
+  color: #001021;
+  text-align: center;
+}
+
+
