@@ -1,0 +1,24 @@
+<%- include('../partials/head'); %>
+
+  <div class="container">
+    <h1 class="create-heading">Create new blog post</h1>
+    <main class="create">
+      <form action="/blog" method="POST" class="form-create">
+        <div class="form-control">
+          <label for="post-name">Title</label>
+          <input name="name" type="text" id="post-name">
+        </div>
+        <div class="form-control">
+          <label for="post-text">Text</label>
+          <textarea name="text" id="post-text" cols="30" rows="6"></textarea>
+        </div>
+        <div class="form-control">
+          <label for="post-img">Featured image address</label>
+          <input name="img" type="text" id="post-img">
+        </div>
+        <button class="btn btn-primary">Post</button>
+      </form>
+    </main>
+  </div>
+
+  <%- include('../partials/footer'); %>

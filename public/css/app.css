@@ -11,7 +11,7 @@
 body {
   font-family: var(--text);
   font-weight: 300;
-  background-color: #ccc;
+  background-color: rgb(233, 232, 232);
 }
 
 a {
@@ -171,8 +171,65 @@ img {
 .sidebar__heading {
   font-family: var(--primary-text);
   font-size: 20px;
-  color: #001021;
+  margin-bottom: 20px;
+  color: #555;
   text-align: center;
 }
 
+.recent__list li {
+  color: #333;
+  padding: 10px 8px 15px;
+  border-bottom: 1px dashed rgb(152, 152, 152);
+  font-size: 15px;
+  line-height: 1.4;
+}
 
+.recent__list li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.create {
+  height: 70vh;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.create-heading {
+  font-size: 30px;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+form.form-create {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #ccc;
+  padding: 20px;
+}
+
+.form-control {
+  margin: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control label {
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.form-control input,
+.form-control textarea {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.form-create button {
+  display: block;
+  margin: 0 auto 20px;
+  font-size: 20px;
+  font-weight: 700;
+  cursor: pointer;
+}

@@ -8,7 +8,7 @@
             <h1 class="content__heading">Bloggy</h1>
             <p class="content__description">Bloggyy is a platform for creating your amazing Blog!</p>
             <div class="content__buttons">
-              <a href="/blog/create-post" class="btn btn-primary">Create Post</a>
+              <a href="/blog/create" class="btn btn-primary">Create Post</a>
               <a href="/blog" class="btn btn-secondary">View Blog</a>
             </div>
           </div>
@@ -22,6 +22,11 @@
     <aside class="sidebar">
       <div class="sidebar__inner">
         <h4 class="sidebar__heading">Recent posts</h4>
+        <ul class="recent__list">
+          <% for (let i = 0; i < 3; i++ ) { %>
+            <li><%= blog[i].name %></li>
+          <% } %>
+        </ul>
       </div>
     </aside>
     <!-- sidebar end -->
